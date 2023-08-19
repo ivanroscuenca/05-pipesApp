@@ -4,4 +4,10 @@ import { Component } from '@angular/core';
   selector: 'products-order',
   templateUrl: './order.component.html',
 })
-export class OrderComponent {}
+export class OrderComponent {
+  public isUpper: boolean = false;
+
+  public toogleUppercase(): void {
+    this.isUpper = !this.isUpper;
+  }
+}
